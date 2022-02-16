@@ -1,0 +1,25 @@
+$-white: #FFFFFF;
+$-black: #000000;
+$-grayDark: #898989;
+$-gray: #EEEEEE;
+$-green: #83BC00;
+$-greenDark: #76B900;
+* {
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+body {
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: DINPro,Helvetica,Arial,Sans-Serif;
+    background-color: var($-white);
+    nav{
+        display: flex;
+
+    }
+}
