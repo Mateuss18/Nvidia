@@ -1,25 +1,57 @@
-$-white: #FFFFFF;
-$-black: #000000;
-$-grayDark: #898989;
-$-gray: #EEEEEE;
-$-green: #83BC00;
-$-greenDark: #76B900;
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --grayDark: #898989;
+    --gray: #eeeeee;
+    --green: #83bc00;
+    --greenDark: #76b900;
+}
+
 * {
     box-sizing: 0;
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 body {
     height: 100vh;
     font-size: 1.6rem;
-    font-family: DINPro,Helvetica,Arial,Sans-Serif;
-    background-color: var($-white);
-    nav{
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--white);
+    nav {
         display: flex;
+        align-items: center;
+        position: fixed;
+        background-color: var(--white);
+        color: var(--grayDark);
+        height: 44px;
+        width: 100vw;
+        padding: 0 3rem;
+        gap: 30%;
+        
+            .menu-left{
+                display: flex;
+                
+                img{
+                    padding-right: 30px;
+                }
+            }
+            .menu-right{
+                display: flex;
+
+                font-size: 1.2rem;
+            }
+            ul{
+                display: flex;
+                a{
+                    padding: 10px 10px 10px 5px;
+                    color: var(--grayDark);
+                }
+            } 
 
     }
 }
