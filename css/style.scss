@@ -22,6 +22,17 @@ body {
     font-size: 1.4rem;
     font-family: "Montserrat", sans-serif;
     background-color: var(--white);
+
+    .btn{
+        cursor: pointer;
+        height: 40px;
+        padding: 0 15px;
+        border: none;
+        font-weight: 700;
+        color: var(--white);
+        background-color: var(--green);
+    }
+
     nav {
         display: flex;
         align-items: center;
@@ -63,12 +74,13 @@ body {
         padding-top: 40px;
         #slider {
             display: flex;
-                width: 5000px;
+                width: 5300px;
                 .slide {
                     overflow: hidden;
-                    img{
-                        background-size: cover;
-                        background-position: center;
+                    position: relative;
+                    .imgSlide{
+                        width: 100vw;
+                        height: 580px;
                     }
                     .text {
                         display: inline-block;
@@ -77,24 +89,39 @@ body {
                         left: 90px;
                     }
                     h2 {
-                        font-size: 5.2rem;
+                        font-size: 5rem;
                         padding-bottom: 10px;
                         max-width: 700px;
                         color: var(--green);
                     }
                     p {
                         color: var(--white);
+                        max-width: 520px;
+                        margin-bottom: 30px;
                     }
-                    .btn{
-                        cursor: pointer;
-                        height: 40px;
-                        margin-top: 30px;
-                        padding: 0 15px;
-                        border: none;
-                        font-weight: 700;
-                        color: var(--white);
-                        background-color: var(--green);
-                    }
+                }
+            }
+        }
+        .anuncio{
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+            padding-bottom: 10px;
+            background-color: var(--gray);
+            img{
+                height: 90px;
+                padding-right: 15px;
+            }
+            .textAside{
+                h3{
+                    font-size: 2.5rem;
+                    padding: 5px 0;
+                }
+                p{
+                    font-size: 1.3rem;
+                    max-width: 750px;
+                    line-height: 22px;
+                    padding-bottom: 15px;
                 }
             }
         }
