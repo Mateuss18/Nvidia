@@ -105,7 +105,7 @@ body {
         .anuncio{
             display: flex;
             justify-content: center;
-            margin: 10px 0;
+            margin: 15px 0;
             padding-bottom: 10px;
             background-color: var(--gray);
             img{
@@ -123,6 +123,26 @@ body {
                     line-height: 22px;
                     padding-bottom: 15px;
                 }
+                #btnAnuncio{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .containerCards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--gray);
+            h2{
+                color: var(--green);
+                font-size: 3.4rem;
+                padding-top: 35px;
+                padding-bottom: 15px;
+                font-weight: 100;
+            }
+            .carouselCards{
+                display: flex;
+                gap: 25px;
             }
         }
     }
