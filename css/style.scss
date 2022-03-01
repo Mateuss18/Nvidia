@@ -143,6 +143,14 @@ body {
             .carouselCards{
                 display: flex;
                 gap: 25px;
+                .post{
+                    background-color: var(--white);
+                    -webkit-box-shadow: 0px 0px 24px -6px rgba(0,0,0,0.57); 
+                    box-shadow: 0px 0px 24px -6px rgba(0,0,0,0.57);
+                    h4{
+                        margin: 10px 0;
+                    }
+                }
             }
         }
     }
