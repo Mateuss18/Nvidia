@@ -5,14 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <!-- ESTILO -->
         <link rel="stylesheet" href="./css/style.css" />
 
-        <!--FONT IMPORT-->
+        <!-- FONT IMPORT -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap"rel="stylesheet"/>
 
-        <title>Lider em computação</title>
+        <title>Nvidia home</title>
     </head>
     <body>
         <!-- MENU DE NAVEGAÇÃO -->
@@ -36,8 +37,8 @@
 
         <!-- HEADER COM SLIDER -->
         <header>
-            <div id="slider">
-                <div class="slide">
+            <div class="slides">
+                <div class="slide selected">
                     <label class="text">
                         <h2>NOVAS GEFORCE RTX™ 3080 Ti E 3070 Ti</h2>
                         <p>THE ULTIMATE PLAY</p>
@@ -49,8 +50,7 @@
                     <label class="text">
                         <h2>ACOMPANHE SUA JORNADA DE AI</h2>
                         <p>Obtenha acesso imediato à AI da NVIDIA com laboratórios gratuitos com curadoria, 
-                        desde chatbots com tecnologia de AI com o Servidor de Inferência Triton, até a 
-                        classificação de imagens com oTensorFlow e muito mais</p>
+                        desde chatbots com tecnologia de AI com o Servidor de Inferência Tritons</p>
                         <button class="btn">COMEÇAR</button>
                     </label>
                     <img class="imgSlide" src="./assets/sliderImg2.png" alt="imagem demonstrativa"/>
@@ -70,6 +70,13 @@
                         <button class="btn">SAIBA MAIS</button>
                     </label>
                     <img class="imgSlide" src="./assets/sliderImg4.png" alt="imagem demonstrativa"/>
+                </div>
+                <!-- BOLINHAS PARA NAVEGAÇÃO ENTRE OS SLIDES -->
+                <div class="balls">
+                    <div class="ball selecionado"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
                 </div>
             </div>
         </header>
@@ -253,5 +260,7 @@
             </ul>
             <span class="copyright">Copyright © 2022 NVIDIA Corporation</span>
         </footer>
+        
+        <script src="./js/script.js"></script>
     </body>
 </html>
