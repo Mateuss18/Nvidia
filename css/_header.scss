@@ -1,0 +1,85 @@
+header {
+    padding-top: 40px;
+    .slides {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .slide {
+            display: none;
+            position: relative;
+            .imgSlide {
+                width: 1366px;
+                height: 600px;
+            }
+            .text {
+                position: absolute;
+                top: 160px;
+                left: 90px;
+                h2 {
+                    font-size: 5rem;
+                    padding-bottom: 10px;
+                    max-width: 700px;
+                    color: var(--green);
+                }
+                p {
+                    font-weight: 900;
+                    font-size: 1.9rem;
+                    color: var(--white);
+                    max-width: 520px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .slide.selected {
+            display: block;
+        }
+        .balls {
+            position: absolute;
+            width: 1380px;
+            display: flex;
+            justify-content: center;
+            margin-top: 535px;
+            .ball.selecionado {
+                background-color: var(--greenDark);
+            }
+        }
+        .balls div {
+            border: 2px solid var(--gray);
+            padding: 5px;
+            margin-right: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--greenDark);
+            }
+        }
+    }
+}
+.anuncio {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    padding-bottom: 10px;
+    background-color: var(--gray);
+    img {
+        height: 100px;
+        padding-right: 15px;
+    }
+    .textAside {
+        h3 {
+            font-size: 2.8rem;
+            padding: 5px 0;
+        }
+        p {
+            font-size: 1.4rem;
+            max-width: 820px;
+            line-height: 22px;
+            padding-bottom: 15px;
+            color: #2e2e2e;
+        }
+        #btnAnuncio {
+            font-size: 1.6rem;
+        }
+    }
+}

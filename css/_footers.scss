@@ -1,0 +1,95 @@
+.bigFooter {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    .cotainerColunas {
+        display: flex;
+        padding: 0 0 50px 0;
+        .coluna {
+            display: flex;
+            flex-direction: column;
+            padding-right: 20px;
+            width: 38rem;
+            gap: 18px;
+            .colunaTitle {
+                font-size: 1.9rem;
+                color: var(--white);
+                padding-bottom: 13px;
+                border-bottom: 1px solid #969696;
+            }
+            a {
+                font-size: 1.6rem;
+                color: var(--green);
+                font-weight: 100;
+            }
+        }
+    }
+    .subFooter {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: var(--white);
+        img {
+            height: 60px;
+            color: var(--green);
+        }
+        span {
+            font-size: 2.1rem;
+            font-weight: 100;
+        }
+        button {
+            font-size: 1.7rem;
+            height: 45px;
+        }
+        .redesSociais {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            span {
+                padding-left: 20px;
+                font-size: 1.6rem;
+                color: var(--grayDark);
+            }
+            .redesIcons {
+                display: flex;
+                gap: 20px;
+                img {
+                    cursor: pointer;
+                    height: 37px;
+                }
+            }
+        }
+    }
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 65px;
+    margin: 0 auto;
+    color: var(--grayDark);
+    .firstLine {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        img {
+            height: 20px;
+        }
+    }
+    ul {
+        display: flex;
+        gap: 8px;
+        padding-bottom: 10px;
+        li {
+            cursor: pointer;
+            list-style-type: none;
+        }
+        li:hover {
+            color: #444444;
+        }
+    }
+    .copyright {
+        font-size: 1.1rem;
+    }
+}

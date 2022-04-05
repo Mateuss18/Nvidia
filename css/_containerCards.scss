@@ -1,0 +1,42 @@
+.containerCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray);
+    padding: 0 0 70px;
+    h2 {
+        color: var(--green);
+        font-size: 3.4rem;
+        padding-top: 50px;
+        padding-bottom: 15px;
+        font-weight: 100;
+    }
+    .carouselCards {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1276px;
+        .post {
+            margin: 12px;
+            cursor: pointer;
+            background-color: var(--white);
+            -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+            .infoCard {
+                margin: 17px 0 19px 15px;
+                h4 {
+                    color: var(--green);
+                    font-weight: 400;
+                    font-size: 1.7rem;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .post:hover {
+            -webkit-box-shadow: 0px 0px 13px 3px rgba(0, 0, 0, 0.21);
+            box-shadow: 0px 0px 13px 3px rgba(0, 0, 0, 0.21);
+        }
+    }
+}
