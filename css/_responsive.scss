@@ -1,0 +1,14 @@
+@media (max-width: 630px){
+    html{
+        font-size: 50%;
+    }
+    header .slides .slide .text{
+        top: 20px;
+        left: 20px;
+    }
+    nav{
+        ul{
+            display: none;
+        }
+    }
+}
