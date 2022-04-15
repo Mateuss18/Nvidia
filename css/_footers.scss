@@ -72,9 +72,10 @@
 }
 footer {
     display: flex;
-    flex-direction: column;
-    padding: 3% 6%;
     margin: 0 auto;
+    flex-direction: column;
+    padding: 30px;
+    max-width: 1202px;
     color: var(--grayDark);
     .firstLine {
         display: flex;
